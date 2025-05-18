@@ -1,0 +1,34 @@
+{
+  "name": "cherry",
+  "displayName": "Cherry",
+  "description": "Syntax highlighting for the Cherry programming language.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.100.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "cherry",
+        "aliases": [
+          "Cherry",
+          "cherry"
+        ],
+        "extensions": [
+          "ch"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "cherry",
+        "scopeName": "source.cherry",
+        "path": "./syntaxes/cherry.tmLanguage.json"
+      }
+    ]
+  }
+}
